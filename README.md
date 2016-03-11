@@ -6,6 +6,8 @@ I appreciate if people would help me expand the libraries for other languages.
 
 Right now there is a small library for swedish and a bigger one for english. 
 
+So when do you want to censor language? Let's say you have a "serious" blogg and some of the readers are commenting 
+in a bad way. This is a way to sort out those words.
 
 ## How to use
 #### all();
@@ -43,3 +45,8 @@ console.log(s3);
 
 
 ```
+
+
+
+#### Author: Viktor Larsson 
+#### 
