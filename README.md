@@ -15,6 +15,8 @@ in a bad way. This is a way to sort out those words. Or you maybe just hate some
 ```javascript
 var testString = "Fuck this shit up man! Boy. You can't do shit.You know That right??? Ja jävlar vad coolt. Fan ta detta alltså";
 
+var censority = require('censority');
+
 // using callback function :
 new censority(testString).all(function(msg){
     console.log(msg);
@@ -26,6 +28,16 @@ console.log(s);
 
 //both's answer :
 //**** this ***t up man! Boy. You can't do ***t.You know That right??? Ja *****r vad coolt. *** ta detta alltså
+
+// or by building a new censurity object by:
+
+var cen = new censority();
+
+// then you will have to call the function '.censur' when to censur an object. 
+
+var censuredText = cen.censur('text to be censured').all();
+
+
 ```
 
 #### by specific language :
@@ -57,6 +69,11 @@ console.log(s3);
 
  // add just anoter word.
  cen.addCustomWord('This-word-is-bad');
+ 
+ // then use the censurity-object with the built in function ".censur" as
+ cen.censur('Text that should be censured').custom(function(msg){
+    console.log(msg);
+ });
  
  
  ```
