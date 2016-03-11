@@ -36,10 +36,6 @@ var badWords = gatherAll(lang);
 
 
 
-
-
-
-
 var censority = function (msg) {
     this.msg = msg;
 };
@@ -62,6 +58,11 @@ censority.prototype.custom = function (c) {
     return isFunction(c) ? c(checkWords(this.msg,lang.customWords)) : checkWords(this.msg,lang.customWords);
 };
 
+censority.prototype.censur = function(msg){
+    return new censority(msg);
+};
+
+
 censority.prototype.addCustomWord = function(word){
     console.log(typeof word);
     if(typeof word === 'object'){
@@ -73,30 +74,9 @@ censority.prototype.addCustomWord = function(word){
     } else{
       return console.log(word + 'is not object, string nor number!')
     }
+
     badWords = gatherAll(lang);
 };
 
 
-/*
-// How to use. Example.
-
-var testString = "Fuck this shit up man! Boy. You can't do shit.You know That right??? Ja jävlar vad coolt. Fan ta detta alltså";
-
-// using callback function :
-new censority(testString).all(function(msg){
-});
-
-// or just using sync return :
-var s = new censority(testString).all();
-
-// both's answer :
-// **** this ***t up man! Boy. You can't do ***t.You know That right??? Ja *****r vad coolt. *** ta detta alltså
-
-var s2 = new censority(testString).swedish();
-console.log(s2);
-// Fuck this shit up man! Boy. You can't do shit.You know That right??? Ja *****r vad coolt. *** ta detta alltså
-
-var s3 = new censority(testString).english();
-console.log(s3);
-//**** this ***t up man! Boy. You can't do ***t.You know That right??? Ja jävlar vad coolt. Fan ta detta alltså
-*/
+exports = new censority;
