@@ -46,6 +46,21 @@ console.log(s3);
 
 ```
 
+## Custom wordlist 
+ To create a own word list and only use only that on.
+ ```javascript 
+ var censur = require('./censority');
+ var cen = new censur();
+ 
+ var arrayWithbadWords = ['badbad', 'very bad','extremly bad word'];
+ cen.addCustomWord(arrayWithbadWords);
+
+ // add just anoter word.
+ cen.addCustomWord('This-word-is-bad');
+ 
+ 
+ ```
+
 
 
 #### Author: Viktor Larsson 
