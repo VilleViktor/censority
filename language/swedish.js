@@ -3,8 +3,9 @@
  */
  
 var badSwedish =
-    ["knulla", "kuk", "fitta", "jävla", "fan", "vagina",
-    "helvete", "neger", "bög", "lebb", "snopp", "penis",
-        "blatte", "jävel"];
+    [  
+       "blatte", "bög","fan", "fitta","helvete","jävel", "jävla", "knulla", "kuk","kåt","sugen", "lebb", "neger", "röv", 
+       "snopp","sug min", "penis","vagina"
+    ];
 
 exports.swedish = badSwedish;
