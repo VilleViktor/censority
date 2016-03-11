@@ -1,23 +1,20 @@
 {
   "name": "censority",
-  "version": "0.0.0",
-  "description": "Start of full censor bad language",
+  "version": "1.0.0",
+  "description": "Start of full censur bad language, create own or use existing one.",
   "main": "censority.js",
-  "scripts": {
-    "test": "echo "Error: no test specified" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/VilleViktor/censority/"
   },
   "keywords": [
-    "censor",
+    "censur",
     "badwords",
     "bad language"
   ],
   "author": "Viktor Larsson <viktorlarsson.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VilleViktor/censority/issues"
+    "url": "https://github.com/VilleViktor/censority/"
   }
 }
