@@ -60,7 +60,7 @@ exports = new censority;
 
 
 // How to use. Example.
-
+/*
 var testString = "Fuck this shit up man! Boy. You can't do shit.You know That right??? Ja jävlar vad coolt. Fan ta detta alltså";
 
 // using callback function :
@@ -72,7 +72,7 @@ new censority(testString).all(function(msg){
 var s = new censority(testString).all();
 console.log(s);
 
+*/
 // both's answer :
 // **** this ***t up man! Boy. You can't do ***t.You know That right??? Ja *****r vad coolt. *** ta detta alltså
-
 
