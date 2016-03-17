@@ -55,6 +55,12 @@ censority.prototype.english = function (callback) {
     return isFunction(callback) ? callback(checkWords(this.msg, lang.english)) : checkWords(this.msg, lang.english);
 };
 
+
+censority.prototype.spanish = function (callback) {
+    return isFunction(callback) ? callback(checkWords(this.msg, lang.spanish)) : checkWords(this.msg, lang.spanish);
+};
+
+
 censority.prototype.custom = function (callback) {
     return isFunction(callback) ? callback(checkWords(this.msg, lang.customWords)) : checkWords(this.msg, lang.customWords);
 };

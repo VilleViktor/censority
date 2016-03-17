@@ -1,6 +1,6 @@
 {
   "name": "censorityjs",
-  "version": "1.0.3",
+  "version": "1.0.3.1",
   "description": "Start of full censor bad language, create own or use existing one.",
   "main": "censority.js",
   "repository": {
@@ -9,12 +9,12 @@
   },
   "keywords": [
     "censur",
+    "censor",
     "badwords",
     "bad words",
     "bad language",
-    "censor",
-    "censorify",
-    "censorify"
+    "filter language",
+    "filter words"
   ],
   "author": "Viktor Larsson",
   "license": "MIT",
