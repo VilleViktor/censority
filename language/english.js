@@ -53,5 +53,4 @@ var badEnglish =
         "tw4t", "twat", "twathead", "twatty", "twunt", "twunter", "v14gra", "v1gra", "vagina", "viagra", "vulva", "w00se", "wang",
         "wank", "wanker", "wanky", "whoar", "whore", "willies", "willy", "xrated", "xxx"];
 
-
 exports.english = badEnglish;

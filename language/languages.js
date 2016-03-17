@@ -6,5 +6,6 @@
 var language = {};
 language.swedish = require('./swedish').swedish;
 language.english = require('./english').english;
+language.spanish = require('./spanish').spanish;
 
 exports.language = language;

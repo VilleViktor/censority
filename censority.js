@@ -3,7 +3,7 @@ var lang = require('./language/languages').language;
 lang.cW  = lang.customWords = [];
 lang.swe = lang.swedish;
 lang.eng = lang.english;
-
+lang.spa = lang.spanish;
 
 // check if wants to do by callback or not!
 function isFunction(functionToCheck) {
