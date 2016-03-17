@@ -1,6 +1,6 @@
 {
   "name": "censorityjs",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Start of full censor bad language, create own or use existing one.",
   "main": "censority.js",
   "repository": {
@@ -10,14 +10,16 @@
   "keywords": [
     "censur",
     "badwords",
-    "bad language"
+    "bad words",
+    "bad language",
+    "censor",
+    "censorify",
+    "censorify"
   ],
   "author": "Viktor Larsson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VilleViktor/censority/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "tonicExampleFilename" : "./censorityjstonicExample.js"
 }

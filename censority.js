@@ -75,7 +75,8 @@ censority.prototype.addCustomWord = function (word) {
     } else {
         return console.log(word + 'is not object, string nor number!')
     }
-
+    // update lang.cW and badWords
+    lang.cW = lang.customWords; 
     badWords = gatherAll(lang);
 };
 
