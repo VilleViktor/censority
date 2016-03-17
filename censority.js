@@ -100,8 +100,3 @@ censority.prototype.nrof = function(language,callback){
 }
 
 exports = module.exports = censority;
-
-
-var cen = new censority();
-cen.censur('fuck this shit shitter bad fucker knulla röv bajs').nrof('swe',function(nr){console.log(nr)});
-cen.nrof(function(nr){console.log(nr);});

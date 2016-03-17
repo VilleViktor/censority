@@ -1,5 +1,5 @@
 {
-  "name": "censority",
+  "name": "censorityjs",
   "version": "1.0.0",
   "description": "Start of full censor bad language, create own or use existing one.",
   "main": "censority.js",
@@ -16,5 +16,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VilleViktor/censority/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
