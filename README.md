@@ -79,6 +79,24 @@ console.log(s3);
  ```
 
 
+ ## Nr of bad words
+new feature. calculate number of bad words in a string.
+ ```javascript 
+// create new object
+var cen = new censority();
+cen.censur('bad-words-string!')
+		.nrof('swe',	function(nr){	
+			console.log(nr)
+		});
+
+cen.nrof(function(nr){
+	console.log(nr);
+});
+
+
+ ```
+
+
 
 #### Author: Viktor Larsson 
 #### 
