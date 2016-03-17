@@ -1,6 +1,6 @@
 {
   "name": "censorityjs",
-  "version": "1.0.3.1",
+  "version": "1.0.4",
   "description": "Start of full censor bad language, create own or use existing one.",
   "main": "censority.js",
   "repository": {
