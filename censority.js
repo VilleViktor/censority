@@ -1,9 +1,9 @@
 var lang = require('./language/languages').language;
 
-lang.cW  = lang.customWords = [];
-lang.swe = lang.swedish;
-lang.eng = lang.english;
-lang.spa = lang.spanish;
+lang.cW  =  lang.customWords = [];
+lang.swe =  lang.se     =   lang.swedish;
+lang.eng =                  lang.english;
+lang.es  =  lang.esp    =   lang.spanish;
 
 // check if wants to do by callback or not!
 function isFunction(functionToCheck) {
@@ -51,12 +51,13 @@ censority.prototype.swedish = function (callback) {
 };
 
 
+
 censority.prototype.english = function (callback) {
     return isFunction(callback) ? callback(checkWords(this.msg, lang.english)) : checkWords(this.msg, lang.english);
 };
 
 
-censority.prototype.spanish = function (callback) {
+censority.prototype.spanish  =   function (callback) {
     return isFunction(callback) ? callback(checkWords(this.msg, lang.spanish)) : checkWords(this.msg, lang.spanish);
 };
 
@@ -64,12 +65,6 @@ censority.prototype.spanish = function (callback) {
 censority.prototype.custom = function (callback) {
     return isFunction(callback) ? callback(checkWords(this.msg, lang.customWords)) : checkWords(this.msg, lang.customWords);
 };
-
-censority.prototype.censur = function (msg) {
-    this.msg = msg;
-    return new censority(msg);
-};
-
 
 censority.prototype.addCustomWord = function (word) {
     if (typeof word === 'object') {
@@ -86,11 +81,9 @@ censority.prototype.addCustomWord = function (word) {
     badWords = gatherAll(lang);
 };
 
-
 var nrOF = function(msg, language){
         return msg.match(regex(language));
 }
-
 
 // Get number of bad words in a sentance or word-list etcetc.. 
 censority.prototype.nrof = function(language,callback){
@@ -105,5 +98,36 @@ censority.prototype.nrof = function(language,callback){
     return nr !== null ? (isFunction(callback) ? callback(nr.length) : nr.length) : (isFunction(callback) ? callback(0) : 0);
 
 }
+
+
+// king of "main-function". Almost always start from here..
+censority.prototype.censur = function (msg, func1, func2) {
+    this.msg = msg;
+    if(isFunction(func1)){ // func1 is a callbackfunction;
+
+    }
+
+    // func1 is telling us that there is something going on :P
+    if(typeof lang[func1] !== 'undefined' && !isFunction(func2)){ 
+
+    } 
+
+    // func1 is telling us that there is something going on :P 
+    // and func2 is a callbackfunction
+    if(typeof lang[func1] !== 'undefined' && isFunction(func2)){ 
+
+    } 
+
+
+    return new censority(msg);
+};
+
+// aliases
+    
+censority.prototype.swe = censority.prototype.SE = censority.prototype.swedish ;
+censority.prototype.eng = censority.prototype.english;
+
+censority.prototype.addCW = censority.prototype.addCustomWord;
+censority.prototype.censor = censority.prototype.filter = censority.prototype.censur;
 
 exports = module.exports = censority;
