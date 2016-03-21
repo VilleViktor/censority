@@ -8,8 +8,6 @@ Right now there is a small library for swedish and a bigger one for english.
 Added a small library for some spannish words (I do not know any spanish so i used google-translate to 
 get that library started).
 
-So when do you want to censor language? Let's say you have a "serious" blogg and some of the readers are commenting 
-in a bad way. This is a way to sort out those words. Or you maybe just hate some swear words in some language ( not quite there yet though). Or maybe doing a project for kids etc etc etc....
 
 ## How to use
 #### all();
@@ -98,6 +96,11 @@ cen.nrof(function(nr){
 
  ```
 
+
+## Versions
+* 1.0.5: Removed unecessary "console.log" in swedish lib. Sorry for this inconvienience.  Also there is new aliases for shorter expressions, example  : swe = swedish . customWordlist = cW. 
+
+* 1.0.4: Introduced consorityjs.nrof().  
 
 
 #### Author: Viktor Larsson 

@@ -8,10 +8,4 @@ var badSwedish =
        "sugen","lebb","nazi", "neger","ollon","pung","runk", "röv",  "snopp","sug min", "penis","vagina"
     ];
 
-
-
-console.log(badSwedish.forEach(function(a){
-    console.log(a);
-}))
-
 exports.swedish = badSwedish;

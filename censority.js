@@ -103,7 +103,7 @@ censority.prototype.nrof = function(language,callback){
 // king of "main-function". Almost always start from here..
 censority.prototype.censur = function (msg, func1, func2) {
     this.msg = msg;
-    if(isFunction(func1)){ // func1 is a callbackfunction;
+   /* if(isFunction(func1)){ // func1 is a callbackfunction;
 
     }
 
@@ -117,7 +117,7 @@ censority.prototype.censur = function (msg, func1, func2) {
     if(typeof lang[func1] !== 'undefined' && isFunction(func2)){ 
 
     } 
-
+*/
 
     return new censority(msg);
 };
