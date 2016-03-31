@@ -9,6 +9,13 @@ Added a small library for some spannish words (I do not know any spanish so i us
 get that library started).
 
 
+## Install by NPM
+```javascript
+npm install censorityjs
+```
+Try it out at tonicdev at
+[Censorityjs at tonicdev](https://tonicdev.com/npm/censorityjs)
+
 ## How to use
 #### all();
 
